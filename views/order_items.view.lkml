@@ -59,6 +59,11 @@ view: order_items {
   measure: total_sale_price {
     type: sum
     sql: ${sale_price} ;;  }
+
+  measure: count_of_phone_numbers {
+    type: count_distinct
+    sql: ${phone} ;;
+  }
   measure: average_sale_price {
     type: average
     sql: ${sale_price} ;;  }
